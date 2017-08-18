@@ -2,31 +2,43 @@
 
   // Project configuration.
   grunt.initConfig({
-  	sass: {
-  		options: {
-  			sourceMap: true
-  		},
-  		dist: {
-  			files: {
-  				'css/style.css': 'sass/style.sass'
+    sass: {
+      options: {
+        sourceMap: true
+      },
+      dist: {
+        files: {
+          'main.css': 'main.sass'
   			}
   		}
   	},
-
-  	imagemin: {
-  		dynamic: {
-  			files: [{
-  				expand: true,
-  				cwd: 'images/',
-  				src: ['**/*.{png,jpg,gif}'],
-  				dest: 'images/build/'
+    
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'images/build/'
   			}]
   		}
   	},
-      
+    
+    browserSync: {
+      bsFiles: {
+        src : ['css/main.css', 'index.html',]
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: "./"
+        }
+      }
+    },
+    
      jshint: {
       all: ['js/*.js']
-    },
+     },
 
      watch: {
         scripts: {
