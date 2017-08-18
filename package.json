@@ -1,0 +1,29 @@
+{
+  "name": "kodilla-workspace",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krzysiek2017/zadanie-js-1.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "krzysiek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krzysiek2017/zadanie-js-1/issues"
+  },
+  "homepage": "https://github.com/Krzysiek2017/zadanie-js-1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
